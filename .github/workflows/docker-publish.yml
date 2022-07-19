@@ -17,7 +17,7 @@ jobs:
         env:
           DOCKERHUB_USER: ${{secrets.DOCKERHUB_USER}}
           DOCKERHUB_TOKEN: ${{secrets.DOCKERHUB_TOKEN}}
-        run: docker login -U $DOCKERHUB_USER -p $DOCKERHUB_TOKEN
+        run: docker login -u $DOCKERHUB_USER -p $DOCKERHUB_TOKEN
       - name: Build Docker image
         run: docker build -t hallbregg/tor-proxy:latest
       - name: Push Docker image
