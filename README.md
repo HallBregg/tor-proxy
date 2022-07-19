@@ -1,6 +1,6 @@
 # TOR Proxy
 
-This repo contains contenerized Tor service. It allows simply use Tor as a proxy for any service.
+This repo contains containerized Tor service. It allows simply use Tor as a proxy for any service.
 
 ```sh
 docker build -t tor-proxy .
